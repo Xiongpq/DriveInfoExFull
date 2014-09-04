@@ -1,7 +1,10 @@
 DriveInfoExFull
 ===============
 
-获取计算机硬盘序列号用途很多，在网上找到了一个C++的源代码DriveInfoEx([点这里查看](http://www.codeproject.com/Articles/16941/Get-Physical-HDD-Serial-Number-without-WMI))。非常好的一个DLL，.NET项目可以直接引用，而且源代码里有示例。
+获取计算机硬盘序列号用途很多，在网上找到了一个C++的源代码DriveInfoEx，地址：
+http://www.codeproject.com/Articles/16941/Get-Physical-HDD-Serial-Number-without-WMI
+
+非常好的一个DLL，.NET项目可以直接引用，而且源代码里有示例。
 
 但这个DLL在Win7非管理员权限下，无法获取硬盘序列号，所以我就完善了一下这个DLL，让其支持Win7 非管理员。
 
