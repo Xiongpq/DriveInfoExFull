@@ -47,6 +47,7 @@ typedef struct _GETVERSIONOUTPARAMS
 #define  CAP_IDE_ATAPI_ID                2  // ATAPI ID command supported
 #define  CAP_IDE_EXECUTE_SMART_FUNCTION  4  // SMART commannds supported
 
+#ifndef VC90
 typedef struct _GETVERSIONINPARAMS {
         UCHAR    bVersion;               // Binary driver version.
         UCHAR    bRevision;              // Binary driver revision.
@@ -57,7 +58,7 @@ typedef struct _GETVERSIONINPARAMS {
 } GETVERSIONINPARAMS, *PGETVERSIONINPARAMS, *LPGETVERSIONINPARAMS;
 
 //   //  IDE registers
-#ifndef VC90
+
 typedef struct _IDEREGS
 {
    BYTE bFeaturesReg;       // Used for specifying SMART "commands".
